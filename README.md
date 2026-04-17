@@ -1,4 +1,4 @@
-#Projeto Zoológico Web
+# Projeto Zoológico Web
 
 Projeto desenvolvido durante o 2º semestre da faculdade, com foco em apresentar informações sobre um zoológico.
 
