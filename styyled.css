@@ -1,0 +1,251 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+}
+body{
+    background-color: black;
+}
+section,footer{
+    padding: 54px 0;
+}
+h3{
+    font-size: 50px;
+}
+p{
+    color:aqua;
+}
+.container{
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 5%;
+}
+.btn{
+    background-color: rgb(81, 66, 216);
+    color: aliceblue;
+    padding: 15px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    display: inline-block;
+    transition: 0.1s;
+}
+.btn:hover{
+    background-color: rgb(1, 111, 155);
+}
+header{
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 30px;
+}
+nav ul{
+    display: flex;
+    align-items: center;
+}
+nav ul a{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: aliceblue;
+    margin: 0 25px;
+    text-transform: uppercase;
+    font-size: 14px;
+    display: block;
+}
+nav ul a:not(.btn)::after{
+    content: "";
+    background-color: rgb(8, 169, 233);
+    height: 3px;
+    width: 0%;
+    display: block;
+    margin: 0 auto;
+    transition: 0.3s
+}
+nav ul a:hover::after{
+    width: 100%;
+}
+.banner{
+    display: flex;
+    justify-content: center;
+}
+.banner .banner-text{
+    margin: 150px;
+    text-align: center;
+    padding: 0 90px;
+}
+.banner .banner-text h1{
+    font-size: 86px;
+    font-family: Century;
+    color:rgb(255, 255, 255);
+}
+.banner .banner-text p{
+    font-size: 20px;
+    color:#ffffff;
+    font-weight: lighter;
+    margin: 18px 0 ;
+}
+.formularioContato { 
+
+    max-width:600px; 
+    height:auto; 
+    float:none; 
+    margin:auto; 
+    padding:1em; 
+    margin-bottom:1em; 
+    border-radius:6px; 
+    font-family: Century Gothic;
+    background:#ffffff00; 
+    box-shadow: 1px 0px 1.2px 0px #cccccc00; 
+    position:relative; 
+}
+
+.formularioContato:before { 
+
+    width:0; 
+    height:0; 
+    border:15px solid transparent; 
+    border-bottom-color:#ffffff00; 
+    font-family: Century;
+    content:""; 
+    position:absolute; 
+    left:6%; 
+    top:-4.5%; 
+    margin-top:-4px; 
+    margin-left:6px; 
+    z-index:2;
+
+}
+
+.formularioContato label  { 
+
+    float:left; 
+    width:100%; 
+    margin-bottom:1.2em; 
+
+}
+
+.formularioContato label span {
+
+    width: 100%;
+    float: left;
+    color: #ffffff;
+    font-family: Century Gothic;
+    margin-bottom: 6px;
+    font-family:'open_sansregular'; 
+
+}
+
+.formularioContato label input  { 
+
+    font-size:1em; 
+    color:#555; 
+    font-family:'open_sansregular'; 
+    font-family: Century Gothic;
+    outline:none; 
+    border:1px #dee5ed solid; 
+    border-radius:4px; 
+    padding:0.6em; 
+    transition: 0.3s;  
+
+}
+
+.formularioContato label select { 
+
+    font-size:1em; 
+    color:#555; 
+    border:1px #dee5ed solid; 
+    font-family: Century Gothic;
+    border-radius:4px; 
+    padding:0.6em; 
+    outline:none; 
+    transition: 0.3s;  
+
+}
+
+.formularioContato label textarea { 
+
+    font-size:1em; 
+    color:#555; 
+    border:1px #dee5ed solid; 
+    font-family: Century Gothic;
+    border-radius:4px; 
+    padding:0.6em; 
+    outline:none;
+    transition: 0.3s;   
+
+}
+
+.formularioContato label input:focus    { box-shadow:0 0 5px 0px rgb(178,216,231); border:1px rgb(37,174,230) solid; color:rgb(37,174,230);}
+.formularioContato label select:focus   { box-shadow:0 0 5px 0px rgb(178,216,231); border:1px rgb(37,174,230) solid; }
+.formularioContato label textarea:focus { box-shadow:0 0 5px 0px rgb(178,216,231); border:1px rgb(37,174,230) solid; color:rgb(37,174,230);}
+
+.formularioContato button.btn-envia { 
+
+    background-color:rgba(37, 175, 230, 0); 
+    width:100%; display:block; 
+    margin:auto; cursor:pointer; 
+    border-radius:4px;  
+    border:0; 
+    padding:0.8em 0em; 
+    color:#fff; 
+    font-size:1.3em; 
+    font-family:'open_sansbold'; 
+    text-align: center;
+    transition: 0.3s;   
+
+}
+
+.formularioContato button.btn-envia:hover { 
+
+    background-color:rgb(1, 111, 155);
+    
+
+}
+.footer{
+    background-color: rgb(0, 0, 0);
+    text-align: center;
+    width: 100%;
+}
+.footer i{
+    color: rgb(61, 27, 255);
+    font-size: 19px;
+    background-color: white;
+    padding: 10px;
+    margin: 3px;
+    border-radius: 10px;
+}
+.footer p{
+    margin-top: 10px;
+    color: white;
+}
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+  }
+  .fa:hover {
+    opacity: 0.7;
+  }
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+  .fa-instagram {
+    background: #55ACEE;
+    color: white;
+  }
+  .fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+  }
